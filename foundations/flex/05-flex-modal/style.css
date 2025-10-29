@@ -67,3 +67,44 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+/* Section to make it easy to compare to the solution */
+
+.modal {
+  padding: 15px;
+  display: flex;
+}
+
+.icon {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.isthischeating {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.close-button {
+  margin-left: auto;
+}
+
+.text {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-right: 5px;
+}
+
+.close-button {
+  margin-right: 0px;
+}
+
+/* readme said "simple" so I kept it simple. Elegant, however, it isn't.*/
