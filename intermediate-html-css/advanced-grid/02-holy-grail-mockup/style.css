@@ -89,3 +89,64 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+/* Solution is complicated enough that I'll do the overloaded CSS selectors that the solution would normally do */
+
+.container {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 1fr 4fr;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
+
+.header .logo {
+  justify-self: start;
+}
+
+.menu ul,
+.nav ul {
+  display: grid;
+  grid-auto-flow: column;
+  list-style-type: none;
+}
+
+.sidebar {
+  display: grid;
+  gap: 50px;
+  grid-column: 1 / 2;
+  grid-row: span 2;
+}
+
+.sidebar div {
+  display: grid;
+  align-items: center;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.article .card {
+  height: 200px;
+}
+
+.header,
+.footer {
+  grid-column: 1 / 3;
+}
+
+.sidebar {
+  
+}
+
+.article,
+.nav {
+  grid-column: 2 / 3;
+}
